@@ -421,7 +421,7 @@ color: var(--white);
 }
 
 .cottage__wrapper {
-    background-image: url(/img/Phototop.webp);
+    background-image: url(../img/Phototop.webp);
     height: 800px;
     margin-bottom: 30px;
 }
