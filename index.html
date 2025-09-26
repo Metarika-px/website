@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+</head>
+<body>
+    <header class="header">
+        <div class="header-wrapper">
+            <div class="container">
+                <div class="header-content">
+                    <div class="content-logo">
+                        <a class="logo" href="index.html"><img src="img/logo 1.svg" alt="logo"></a>
+                    </div>
+                    <div class="content-sosial">
+                        <a class="social-tel" href="tel:+74958592289">
+                            +7 (495) 859-22-89
+                        </a>
+                        <ul class="social-list">
+                            <li class="social-item">
+                                <a href="#"><img src="img/tg.svg" alt="telegram"></a>                  
+                            </li>
+                            <li class="social-item">
+                                <a href="#"><img src="img/wa.svg" alt="whatsapp"></a>   
+                            </li>
+                            <li class="social-item">
+                                <a href="#"><img src="img/vk.svg" alt="vkontakte"></a>
+                            </li>
+                        </ul>
+                        <button class="burger" type="button">                   
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="header__burger">
+                    <div class="burger-menu">
+                        <nav class="burger-menu__nav">
+                            <ul class="burger-menu__list">
+                                <li class="burger-menu__item">
+                                    <a href="index.html" class="burger-menu__link">Главная</a>
+                                </li>
+                                <li class="burger-menu__item">
+                                    <a href="#form" class="burger-menu__link">Оставить заявку</a>
+                                </li>
+                                <li class="burger-menu__item">
+                                    <a href="task.html" class="burger-menu__link">Задание 1</a>
+                                </li>
+                                <li class="burger-menu__item">
+                                    <a href="#" class="burger-menu__link">Задание 2</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="cottage">
+        <img class="cottage__img-mobile" src="img/H-160-mobile.webp" alt="">
+        <div class="container">
+             <div class="cottage__wrapper">
+                <div class="cottage__inner">
+                    <div class="cottage__info">                    
+                        <div class="cottage__name">
+                            <span class="cottage__name-title">КОТТЕДЖ H-160</span>
+                            <span class="cottage__name-text">От 12,2 млн. руб.</span>
+                        </div>
+                        <ul class="cottage__collection">
+                            <li class="cottage__collection-item">Коллекция</li>
+                            <li class="cottage__collection-item">Коллекция “H”</li>
+                            <li class="cottage__collection-item">Коттеджи ”H”</li>
+                        </ul>
+                    </div>
+                    <ul class="cottage__list">
+                        <li class="cottage__list-item">
+                            <div class="cottage__list-item-info">
+                                <div class="cottage__list-num-container">
+                                    <span class="cottage__list-item-info-value">215</span>
+                                    <span class="cottage__list-item-info-unit">м<sup>2</sup></span></div>
+                                <svg class="cottage__list-item-info-draw" width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24.6074 21.2301V44.7296H56.4011V21.2301" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M61.2402 23.3036L40.5052 11.5538L19.7702 23.3036" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.9199 6.86594V64.5629" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.86914 10.1114L12.9177 5.06293L17.9662 10.1114" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M61.9609 55.5478L4.26344 55.5478" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M58.7151 50.4993L63.7637 55.5478L58.7151 60.5963" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M44.3246 31.8039V30.6649L47.2656 28.1149C47.6056 27.8203 47.8266 27.5823 47.9286 27.4009C48.0419 27.2196 48.0986 27.0496 48.0986 26.8909C48.0986 26.6643 47.9966 26.4773 47.7926 26.3299C47.5999 26.1713 47.2939 26.0919 46.8746 26.0919C46.5233 26.0919 46.2116 26.1543 45.9396 26.2789C45.6676 26.4036 45.4523 26.5849 45.2936 26.8229L43.9336 26.0069C44.2169 25.5876 44.6136 25.2533 45.1236 25.0039C45.6449 24.7433 46.2796 24.6129 47.0276 24.6129C47.9569 24.6129 48.6823 24.8113 49.2036 25.2079C49.7249 25.6046 49.9856 26.1203 49.9856 26.7549C49.9856 27.0949 49.9006 27.4293 49.7306 27.7579C49.5606 28.0753 49.1979 28.4719 48.6426 28.9479L46.2796 31.0049L45.8886 30.3759H50.2576V31.8039H44.3246Z" fill="white"/>
+                                    <path d="M31.041 37.3629V28.2169H33.812L37.263 34.4729H36.158L39.847 28.2169H42.329L42.363 37.3629H39.966V30.9369L40.374 31.2089L37.229 36.4789H36.107L32.945 31.0219L33.438 30.9029V37.3629H31.041Z" fill="white"/>
+                                    </svg>
+                            </div>
+                            <span class="cottage__list-item-name">Общая площадь</span>
+                        </li>
+                        <li class="cottage__list-item">
+                            <div class="cottage__list-item-info">
+                                <div class="cottage__list-num-container">
+                                    <span class="cottage__list-item-info-value">157</span>
+                                    <span class="cottage__list-item-info-unit">м<sup>2</sup></span>
+                                </div>
+                                <svg class="cottage__list-item-info-draw" width="68" height="69" viewBox="0 0 68 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M39.5 63.0398H62.0492V49.0148V6.93979H5.94922V63.0398H27.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M28.0508 63.0398C28.0508 55.9982 32.998 50.2898 39.1008 50.2898V63.0398" stroke="white" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M40.0609 35.3808V34.2418L43.0019 31.6918C43.3419 31.3971 43.5629 31.1591 43.6649 30.9778C43.7783 30.7965 43.8349 30.6265 43.8349 30.4678C43.8349 30.2411 43.7329 30.0541 43.5289 29.9068C43.3363 29.7481 43.0303 29.6688 42.6109 29.6688C42.2596 29.6688 41.9479 29.7311 41.6759 29.8558C41.4039 29.9805 41.1886 30.1618 41.0299 30.3998L39.6699 29.5838C39.9533 29.1645 40.3499 28.8301 40.8599 28.5808C41.3813 28.3201 42.0159 28.1898 42.7639 28.1898C43.6933 28.1898 44.4186 28.3881 44.9399 28.7848C45.4613 29.1815 45.7219 29.6971 45.7219 30.3318C45.7219 30.6718 45.6369 31.0061 45.4669 31.3348C45.2969 31.6521 44.9343 32.0488 44.3789 32.5248L42.0159 34.5818L41.6249 33.9528H45.9939V35.3808H40.0609Z" fill="white"/>
+                                    <path d="M26.7773 40.9398V31.7938H29.5483L32.9993 38.0498H31.8943L35.5833 31.7938H38.0653L38.0993 40.9398H35.7023V34.5138L36.1103 34.7858L32.9653 40.0558H31.8433L28.6813 34.5988L29.1743 34.4798V40.9398H26.7773Z" fill="white"/>
+                                    <path d="M56.9492 17.1398L11.0492 17.1398" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M51.848 12.0398L56.8965 17.0883L51.848 22.1369" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.0469 57.9398L16.0469 12.0398" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M21.1465 52.8398L16.098 57.8883L11.0494 52.8398" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                                                    
+                            </div>
+                            <span class="cottage__list-item-name">Жилая площадь</span>
+                        </li>
+                        <li class="cottage__list-item">
+                            <div class="cottage__list-item-info">
+                                <div class="cottage__list-num-container">
+                                    <span class="cottage__list-item-info-value">39</span>
+                                    <span class="cottage__list-item-info-unit">м<sup>2</sup></span>
+                                </div>
+                                <svg  class="cottage__list-item-info-draw" width="68" height="69" viewBox="0 0 68 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M31.9847 24.3577V23.2187L34.9258 20.6687C35.2658 20.374 35.4868 20.136 35.5888 19.9547C35.7021 19.7733 35.7587 19.6033 35.7587 19.4447C35.7587 19.218 35.6567 19.031 35.4527 18.8837C35.2601 18.725 34.9541 18.6457 34.5347 18.6457C34.1834 18.6457 33.8717 18.708 33.5997 18.8327C33.3277 18.9573 33.1124 19.1387 32.9538 19.3767L31.5938 18.5607C31.8771 18.1413 32.2737 17.807 32.7837 17.5577C33.3051 17.297 33.9397 17.1667 34.6877 17.1667C35.6171 17.1667 36.3424 17.365 36.8637 17.7617C37.3851 18.1583 37.6457 18.674 37.6457 19.3087C37.6457 19.6487 37.5607 19.983 37.3907 20.3117C37.2207 20.629 36.8581 21.0257 36.3027 21.5017L33.9398 23.5587L33.5487 22.9297H37.9178V24.3577H31.9847Z" fill="white"/>
+                                    <path d="M18.7012 29.9166V20.7706H21.4722L24.9232 27.0266H23.8182L27.5072 20.7706H29.9892L30.0232 29.9166H27.6262V23.4906L28.0342 23.7626L24.8892 29.0326H23.7672L20.6052 23.5756L21.0982 23.4566V29.9166H18.7012Z" fill="white"/>
+                                    <path d="M62.9004 8.66666L5.95039 8.66666" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M58.6504 4.41666L62.9004 8.66666L58.6504 12.9167" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.34961 37.5667L9.34961 5.26666" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M13.5996 35.0167L9.34961 39.2667L5.09961 35.0167" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.09961 61.3667L62.8996 61.3667" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M16.1504 51.1667H29.7504" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M36.5508 46.9167L36.5508 60.5167" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M9.34961 46.9167L9.34961 60.5167" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M36.5508 55.4167H32.3008V60.5167" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18.6992 51.1667L18.6992 60.5167" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M9.34961 55.4167H13.5996V60.5167" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M27.1992 51.1667L27.1992 60.5167" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M47.6 29.0667L42.5 46.9167H52.7L47.6 29.0667Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M50.5 38.5L53.0508 29.0667L57.8 46.9167H53.7814" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M55.25 36.7746L57.5571 29.0667L62.9 46.9167H57.9681" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M48.0242 18.0167L44.1992 29.0667H51.8492L48.0242 18.0167Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M51 24.8167L52.9429 18.0167L56.1 29.0667H52.2413" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M55.25 24.8167L57.5167 18.0167L61.2 29.0667H56.2889" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M47.5996 47.7667L47.5996 60.5167" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M52.6992 47.7667L52.6992 60.5167" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M56.9492 47.7667L56.9492 60.5167" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                                                    
+                            </div>
+                            <span class="cottage__list-item-name">Площадь террасы</span>
+                        </li>
+                        <li class="cottage__list-item">
+                            <div class="cottage__list-item-info">
+                                <div class="cottage__list-num-container">
+                                    <span class="cottage__list-item-info-value">5</span>
+                                </div>
+                                <svg class="cottage__list-item-info-draw" width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M41 62.2935H62.9258V48.2935V6.2935H6.92578V62.2935H28" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M28 62C28 54.8203 33.8203 49 41 49V62" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M55 39C55 33.4772 50.5228 29 45 29V39" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M35 32C29.4772 32 25 27.5228 25 22L35 22" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7 39H45" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M63.0469 39H55.3938" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M34.9844 7.14351L35 22" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M35 32V39" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>                                            
+                            </div>
+                            <span class="cottage__list-item-name">Количество комнат</span>
+                        </li>
+                        <li class="cottage__list-item">
+                            <div class="cottage__list-item-info">
+                                <div class="cottage__list-num-container">
+                                    <span class="cottage__list-item-info-value">2</span>
+                                </div>
+                                <svg class="cottage__list-item-info-draw" width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.92578 37.0704H62.1979" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M12.0273 37.9204L12.0273 14.1204" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M20.5293 55.7704L20.5293 60.8704" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M51.1406 55.7704L51.1406 60.8704" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M12.0273 37.0704H57.9457V47.267C57.9457 51.9633 54.1386 55.7704 49.4423 55.7704H20.5308C15.8345 55.7704 12.0273 51.9633 12.0273 47.267V37.0704Z" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                                    <path d="M26.4831 13.6954C26.4831 9.70511 23.2471 6.47037 19.2552 6.47037C15.2634 6.47037 12.0273 9.70511 12.0273 13.6954" stroke="white" stroke-width="2"/>
+                                    <path d="M24 13H29.102" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M41.7891 6.47037H62.1972" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <rect x="45.1895" y="6.47037" width="13.6054" height="18.7" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                                    <line x1="45.1895" y1="20.7704" x2="58.7949" y2="20.7704" stroke="white" stroke-width="2"/>
+                                    <path d="M24 17V28.9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M26.5508 18.7V33.15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M29.1016 17L29.1016 23.8" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                                                 
+                            </div>
+                            <span class="cottage__list-item-name">Количество санузлов</span>
+                        </li>
+
+                    </ul>
+                </div>
+             </div> 
+             <div class="cottage__telegram">
+                <div class="cottage__telegram-item"> 
+                    <svg class="telegram-icon" width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 48.5C37.2548 48.5 48 37.7548 48 24.5C48 11.2452 37.2548 0.5 24 0.5C10.7452 0.5 0 11.2452 0 24.5C0 37.7548 10.7452 48.5 24 48.5Z" fill="white"/>
+                    <path d="M8.93764 25.674C11.7432 24.1286 14.875 22.8388 17.8012 21.5424C22.8354 19.419 27.8896 17.3324 32.9948 15.3898C33.9881 15.0588 35.7728 14.7351 35.9478 16.2071C35.852 18.2907 35.4578 20.3621 35.1874 22.4335C34.5011 26.9887 33.7079 31.5283 32.9344 36.0685C32.6679 37.5808 30.7734 38.3637 29.5612 37.3959C26.648 35.4281 23.7124 33.4795 20.8364 31.4661C19.8943 30.5088 20.7679 29.1341 21.6093 28.4505C24.0087 26.0859 26.5533 24.0769 28.8273 21.5901C29.4407 20.1088 27.6283 21.3572 27.0305 21.7397C23.7457 24.0033 20.5413 26.4051 17.0781 28.3945C15.3091 29.3683 13.2473 28.5361 11.4791 27.9927C9.8937 27.3363 7.57064 26.6749 8.93764 25.674Z" fill="#1D1D1D"/>
+                    </svg>
+                <span class="cottage__text">Обзор строительства<br>
+                    в телеграм-канале @hilberthouse</span>
+                </div>
+                <div class="cottage__telegram-item"> 
+                    <svg class="frame-108-icon" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.5488 14.7854L41.7837 41.4966" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M42 14L14 14L14 42" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                <span class="cottage__text" style="text-indent:15px">Возможно <b>БЕСПЛАТНО</b> внести правки в проект <br> согласно Вашим индивидуальным требованиям*</span>
+                </div>  
+             </div>
+        </div>
+    </section>
+    <section class="planning"> 
+        <div class="container">
+            <div class="planning__content">
+                <div class="planning__item">
+                    <h2 class="planning__item-name">ПЕРВЫЙ ЭТАЖ</h2>
+                    <img src="img/first_floor.webp" alt="">
+                </div>
+                <div class="planning__item">
+                    <h2 class="planning__item-name">ВТОРОЙ ЭТАЖ</h2>
+                    <img src="img/second_floor.webp" alt="">
+                </div>
+                <div class="planning__item planning__item-swiper">
+                    <h2 class="planning__item-name">ГАЛЕРЕЯ ПЛАНИРОВОК</h2>
+                    <div class="planning__swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide planning__swiper-slide"><img class="planning__swiper-img" src="img/first_floor.webp" alt=""></div>
+                            <div class="swiper-slide planning__swiper-slide"><img class="planning__swiper-img" src="img/second_floor.webp" alt=""></div>
+                        </div>
+                        <div class="swiper-button-prev planning__swiper-button-prev"><svg width="25" height="44" viewBox="0 0 25 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.7988 2.00006L2.99984 21.7991L22.7988 41.598" stroke="white" stroke-width="4" stroke-linecap="round" />
+                            </svg></div>
+                        <div class="swiper-button-next planning__swiper-button-next">
+                            <svg width="26" height="44" viewBox="0 0 26 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.79883 1.99994L22.5978 21.7989L2.79883 41.5979" stroke="white" stroke-width="4" stroke-linecap="round" />
+                            </svg></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section class="cottage-gallery">
+        <div class="cottage-gallery__mobile">
+            <img class="cottage-gallery__slide-img" src="img/gallery.webp" alt="">
+            <img class="cottage-gallery__slide-img" src="img/gallery.webp" alt="">
+            <img class="cottage-gallery__slide-img" src="img/gallery.webp" alt="">
+            <img class="cottage-gallery__slide-img" src="img/gallery.webp" alt="">
+        </div>
+        <div class="cottage-gallery-swiper swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img class="cottage-gallery__slide-img" src="img/gallery.webp" alt=""></div>
+                <div class="swiper-slide"><img class="cottage-gallery__slide-img" src="img/gallery.webp" alt=""></div>
+                <div class="swiper-slide"><img class="cottage-gallery__slide-img" src="img/gallery.webp" alt=""></div>
+                <div class="swiper-slide"><img class="cottage-gallery__slide-img" src="img/gallery.webp" alt=""></div>
+            </div>
+            <div class="container">
+                <div class="gallery-pagination swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <secttion class="cottage-adds">
+            <div class="container">
+                <div class="adds__content">
+                    <h2 class="adds__title">ДОПОЛНИТЕЛЬНЫЕ СТРОЕНИЯ К КОТТЕДЖУ</h2>
+                </div>
+            </div>  
+            <div class="container-right">
+                <div class="adds-swiper swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide adds-swiper__slide">    
+                        <a class="adds__item" href=""><span class="adds_item-name">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.6074 20.439L1.15391 1.35955" stroke="white" stroke-width="2" stroke-linecap="round" />
+                                <path d="M1 21L21 21L21 0.999999" stroke="white" stroke-width="2" stroke-linecap="round" />
+                              </svg>
+                              Гараж под один автомобиль
+                        </span>
+                        <img src="img\adds_1.webp" alt="">
+                      </a></div>
+                      <div class="swiper-slide adds-swiper__slide">    
+                        <a class="adds__item" href=""><span class="adds_item-name">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.6074 20.439L1.15391 1.35955" stroke="white" stroke-width="2" stroke-linecap="round" />
+                                <path d="M1 21L21 21L21 0.999999" stroke="white" stroke-width="2" stroke-linecap="round" />
+                              </svg>
+                              Гараж с доп. комнатой
+                        </span>
+                        <img src="img\adds_2.webp" alt="">
+                      </a></div>
+                      <div class="swiper-slide adds-swiper__slide">    
+                        <a class="adds__item" href=""><span class="adds_item-name">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.6074 20.439L1.15391 1.35955" stroke="white" stroke-width="2" stroke-linecap="round" />
+                                <path d="M1 21L21 21L21 0.999999" stroke="white" stroke-width="2" stroke-linecap="round" />
+                              </svg>
+                              Ограждение
+                        </span>
+                        <img src="img\adds_3.webp" alt="">
+                      </a></div>
+                      <div class="swiper-slide adds-swiper__slide">    
+                        <a class="adds__item" href=""><span class="adds_item-name">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.6074 20.439L1.15391 1.35955" stroke="white" stroke-width="2" stroke-linecap="round" />
+                                <path d="M1 21L21 21L21 0.999999" stroke="white" stroke-width="2" stroke-linecap="round" />
+                              </svg>
+                              Гараж под один автомобиль
+                        </span>
+                        <img src="img\adds_1.webp" alt="">
+                      </a></div>
+                    </div>
+                </div>
+            </div>
+    </secttion>
+    <section class="advantages">
+        <div class="container">
+            <div class="advantages__content">
+                <div class="advantages__title">
+                    <h2 class="advantages__title-name">Преимущества
+                    </h2>
+                    <span class="advantages__title-desc">Создаем оптимальные решения в современном архитектурном стиле
+                        <br>с возможностью строительства в несколько этапов
+                        </span>
+                </div>
+                <img class ="advantages__img" src="img/H-160_74 (2).webp" alt="">
+                <ul class="advantages__list">
+                    <li class="advantages__elements">
+                        <span class="advantages__elements-number">01</span>
+                        <span class="advantages__elements-name">Без скрытых
+                            платежей
+                            </span>
+                        <span class="advantages__elements-desc">Прозрачные и честные цены
+                            на каждый этап строительства
+                            </span>
+                    </li>
+                    <li class="advantages__elements">
+                        <span class="advantages__elements-number">02</span>
+                        <span class="advantages__elements-name">ТЕХНИЧЕСКИЙ
+                            НАДЗОР</span>
+                        <span class="advantages__elements-desc">Контроль соблюдения стандартов, строительных норм и правил</span>
+                    </li>
+                    <li class="advantages__elements">
+                        <span class="advantages__elements-number">03</span>
+                        <span class="advantages__elements-name">Проектное сопровождение
+                        </span>
+                        <span class="advantages__elements-desc">Тщательная проработка
+                            узлов и расчет конструктива
+                            здания</span>
+                    </li>
+                    <li class="advantages__elements">
+                        <span class="advantages__elements-number">04</span>
+                        <span class="advantages__elements-name">Авторский
+                            Контроль</span>
+                        <span class="advantages__elements-desc">Соблюдение требований проектной документации; воплощение авторского дизайна
+                        </span>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="equipment">
+        <div class="container">
+            <div class="equipment__content">
+                <div class="equipment__main">
+                    <div class="equipment__header">
+                        <div class="equipment__title">КОМПЛЕКТАЦИЯ</div>
+                        <div class="equipment__desc">Возможность подбора комплектаций в широком ценовом диапазоне.
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion__item">
+                            <button class="accordion__header">Стены, перегородки<span class="accordion__switcher"></span>
+                            </button>
+                            <div class="accordion__content">
+                                <ul class="accordion__content-list">
+                                    <li class="accordion__content-item">
+                                        наружные несущие монолитные стены - толщина от 350 до 400 мм, усилены пространственным арматурным каркасом (тригонами)
+                                    </li>
+                                    <li class="accordion__content-item">
+                                        плотность бетона наружных стен от D450 до D600
+                                    </li>
+                                    <li class="accordion__content-item">
+                                        утепление не требуется
+                                    </li>
+                                    <li class="accordion__content-item">
+                                        внутренние несущие стены - толщина 300 мм, усилены пространственным арматурным каркасом (тригонами)                                
+                                    </li>
+                                </ul>
+                        </div>
+                        </div>
+                        <div class="accordion__item">
+                            <button class="accordion__header">Стены, перегородки<span class="accordion__switcher"></span>
+                            </button>
+                            <div class="accordion__content">
+                                <ul class="accordion__content-list">
+                                    <li class="accordion__content-item">
+                                        наружные несущие монолитные стены - толщина от 350 до 400 мм, усилены пространственным арматурным каркасом (тригонами)
+                                    </li>
+                                    <li class="accordion__content-item">
+                                        плотность бетона наружных стен от D450 до D600
+                                    </li>
+                                    <li class="accordion__content-item">
+                                        утепление не требуется
+                                    </li>
+                                    <li class="accordion__content-item">
+                                        внутренние несущие стены - толщина 300 мм, усилены пространственным арматурным каркасом (тригонами)                                
+                                    </li>
+                                </ul>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div src="" alt="" class="equipment__picture"><img src="img/H-160_65 (6) 1.webp" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-our-us">
+            <div class="wrapper" style="background-image: url(img/footer-our-us.webp);">
+                <div class="container">
+                    <div class="footer-our-us-content">
+                        <span class="footer-our-us-head">ЛУЧШЕ С НАМИ</span>
+                        <span class="footer-our-us-decs">Создаем оптимальные решения для вспомогательных строений в едином 
+                                архитектурном стиле с возможностью строительства в несколько этапов.</span>
+                        <ul class="footer-our-us-parametrs">
+                            <li class="footer-our-us-parametrs-point">
+                                    Современный архитектурный стиль
+                            </li>
+                            <li class="footer-our-us-parametrs-point">
+                                    Экономичность и энергоэффективность
+                            </li>
+                            <li class="footer-our-us-parametrs-point">
+                                    Высокая степень надеждности конструкции
+                            </li>
+                            <li class="footer-our-us-parametrs-point">
+                                    Всесезонность проведения строительных работ
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <form class="form"action="#" id="form"">
+                    <h2 class="form-title">
+                        <span class="footer-title-desktop">Записаться
+                            на просмотр объекта</span>
+                        <span class="foooter-title-mobile">Запросить каталог       коллекций</span>
+                    </h2>
+
+                    <div class="form-groups">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Ваше имя*"> 
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="tel" placeholder="Телефон*"> 
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="E-mail"> 
+                        </div>
+                    </div>
+                    
+                    <button class="form-button" type="button">Отпрвавить</button>
+                    <label class="forn-lebel" for="">Нажимая на кнопку "Отправить", вы принимаете условия политики конфиденциальности</label>
+                </form>
+                <div class="footer-content-rooms">
+                    <div class="footer-content-rooms-mobile">
+                        <ul class="footer-content-upperroom-nav">
+                            <li class="footer-content-upperroom-nav-element">
+                                <a class="footer-text" href="index.html">Главная</a>
+                            </li>
+                            <li class="footer-content-upperroom-nav-element">
+                                <a class="footer-text" href="#">Коллекции</a>
+                            </li>
+                            <li class="footer-content-upperroom-nav-element">
+                                <a class="footer-text" href="#">Буклеты</a>
+                            </li>
+                            <li class="footer-content-upperroom-nav-element">
+                                <a class="footer-text" href="#">Девелоперам</a>
+                            </li>
+                            <li class="footer-content-upperroom-nav-element">
+                                <a class="footer-text" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                        <ul class="footer-content-anteroom-list-mobile">
+                            <li class="footer-content-anteroom-list-element">
+                                <a href="#"><img src="img/Call.svg" alt="call"></a>
+                            </li>
+                            <li class="footer-content-anteroom-list-element">
+                                <a href="#"><img src="img/tg.svg" alt="telegram"></a>
+                            </li>
+                            <li class="footer-content-anteroom-list-element">
+                                <a href="#"><img src="img/wa.svg" alt="whatsapp"></a>
+                            </li>
+                            <li class="footer-content-anteroom-list-element">
+                                <a href="#"><img src="img/vk.svg" alt="vkontakte"></a>
+                            </li>
+                        </ul>
+                        <a class="footer-policy" href="">
+                            Политика конфиденциальности</a>
+                        <img class="footer-content-upperroom-pay" src="img/Frame 246.svg" alt="pay">
+                    </div>
+                    <div class="footer-content-anteroom">
+                        <div class="footer-content-anteroom-brend">
+                            <img class="footer-content-anteroom-brend-logo" src="img/Rectangle.svg" alt="">
+                            <span class="footer-text">©Hilbert 2016-2024
+                                Все права защищены</span>
+                        </div>
+                        <ul class="footer-content-anteroom-list">
+                            <li class="footer-content-anteroom-list-element">
+                                <a href="#"><img src="img/Call.svg" alt="call"></a>
+                            </li>
+                            <li class="footer-content-anteroom-list-element">
+                                <a href="#"><img src="img/tg.svg" alt="telegram"></a>
+                            </li>
+                            <li class="footer-content-anteroom-list-element">
+                                <a href="#"><img src="img/wa.svg" alt="whatsapp"></a>
+                            </li>
+                            <li class="footer-content-anteroom-list-element">
+                                <a href="#"><img src="img/vk.svg" alt="vkontakte"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-content-room">
+                        <div class="footer-content-upperroom">
+                        <ul class="footer-content-upperroom-nav">
+                            <li class="footer-content-upperroom-nav-element">
+                                <a class="footer-text" href="index.html">Главная</a>
+                            </li>
+                            <li class="footer-content-upperroom-nav-element">
+                                <a class="footer-text" href="#">Ипотека</a>
+                            </li>
+                            <li class="footer-content-upperroom-nav-element">
+                                <a class="footer-text" href="#">Технология</a>
+                            </li>
+                            <li class="footer-content-upperroom-nav-element">
+                                <a class="footer-text" href="#">О нас</a>
+                            </li>
+                            <li class="footer-content-upperroom-nav-element">
+                                <a class="footer-text" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                        <ul class="footer-content-upperroom-nav">
+                            <li class="footer-content-upperroom-nav-element">
+                                <a class="footer-text" href="">Буклеты коллекций</a>
+                            </li>
+                            <li class="footer-content-upperroom-nav-element">
+                                <a class="footer-text" href="#">Девелоперам и инвесторам</a>
+                            </li>
+                            <li class="footer-content-upperroom-nav-element">
+                                <a class="footer-text" href="#">Вопрос / Ответ</a>
+                            </li>
+                            <li class="footer-content-upperroom-nav-element">
+                                <a class="footer-text" href="#">Лента строительства</a>
+                            </li>
+                            <li class="footer-content-upperroom-nav-element">
+                                <a class="footer-text" href="#">Политика конфиденциальности</a>
+                            </li>
+                        </ul>
+                        <img class="footer-content-upperroom-pay" src="img/Frame 246.svg" alt="pay">
+                    </div>
+                    <div class="footer-content-downroom">
+                        <div class="footer-content-downroom-collection">
+                            <span class="footer-text">Коллекции</span>
+                        </div> 
+                        <div class="footer-content-downroom-content">
+                            <ul class="footer-content-downroom-content-list">
+                                <li class="footer-content-downroom-content-list-element">
+                                    <a class="footer-text" href="">Коттеджи “H”</a><br>
+                                    <a class="footer-text" href="">Доп. строения “H”</a>
+                                </li>
+                                <li class="footer-content-downroom-content-list-element">
+                                    <a class="footer-text" href="">Коттеджи “L”</a><br>
+                                    <a class="footer-text" href="">Доп. строения “L”</a>
+                                </li>
+                                <li class="footer-content-downroom-content-list-element">
+                                    <a class="footer-text" href="">Коттеджи “E”</a><br>
+                                    <a class="footer-text" href="">Доп. строения “E”</a>
+                                </li>
+                                <li class="footer-content-downroom-content-list-element">
+                                    <a class="footer-text" href="">Коттеджи “T”</a><br>
+                                    <a class="footer-text" href="">Доп. строения “T”</a>
+                                </li>
+                                <li class="footer-content-downroom-content-list-element">
+                                    <a class="footer-text" href="">Коттеджи “I”</a><br>
+                                    <a class="footer-text" href="">Доп. строения “I”</a>
+                                </li>
+                                <li class="footer-content-downroom-content-list-element">
+                                    <a class="footer-text" href="">Коттеджи “B”</a><br>
+                                    <a class="footer-text" href="">Доп. строения “B”</a>
+                                </li>
+                                <li class="footer-content-downroom-content-list-element">
+                                    <a class="footer-text" href="">Коттеджи “R”</a><br>
+                                    <a class="footer-text" href="">Доп. строения “R”</a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
