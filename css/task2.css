@@ -1,0 +1,156 @@
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.task-flex {
+    margin: 20rem auto;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.task-flex__content {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border: gray 2px solid;
+}
+
+.task-flex__wrapper {
+    width: 100%;
+    height: 100%;
+    background: #39d3fa;
+    background: linear-gradient(180deg,rgba(57, 211, 250, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    position: relative;
+}
+.car-static {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    opacity: 1;
+    transition: 0.1s ease-in-out;
+}
+.car-static__body {
+    position: absolute;
+    bottom: 20%;
+    width: 90%;
+    left: 4%;
+}
+.car-static__wheels-left {
+    position: absolute;
+    bottom: 20%;
+    width: 25%;
+    left: 17%;
+}
+.car-static__wheels-right {
+    position: absolute;
+    bottom: 20%;
+    width: 25%;
+    left: 61%;
+}
+.car-static__belka {
+    position: absolute;
+    bottom: 55%;
+    width: 21%;
+    left: 32%;
+    opacity: 0;
+    transition: .3s linear;
+}
+.task-flex__content:hover {
+    .car-static__belka {
+        opacity: 1;
+    }
+    .car-static__body {
+        animation: car-move .2s linear infinite alternate forwards;
+    }
+    .car-static__text {
+        opacity: 1;
+    }
+}
+.car-static:has(.wheel:hover) {
+    .wheel {
+        animation: wheels-move 1s linear infinite forwards;
+    }
+}
+.text {
+    color: blue;
+}
+.car-static__text {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    top: 5%;
+    left: 15%;
+    transition: .2s linear;
+}
+.car-action {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+    pointer-events: none;
+}
+.task-flex__content:active {
+    animation: flex-move .5s infinite ease-in-out forwards alternate;
+    .car-static {
+        opacity: 0;
+    }
+    .car-action {
+        opacity: 1;
+    }
+    .car-action__belka {
+        transition: 3s ease-in-out, opacity 0.2s ease-in-out;
+        offset-distance: 100%;
+    }
+}
+.car-action__body {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    left: 0%;
+}
+.car-action__belka {
+    position: absolute;
+    width: 35%;
+    left: 66%;
+    bottom: -9%;
+    offset-distance: 0%;
+    offset-rotate: 0deg;
+    offset-path: path('m 26 24 c -49 -48 -50 6 -77 -6 c -8 -3 -23 -61 -68 -8 C -138 41 -179 -42 -201 -10');
+}
+
+.car-action__text {
+    position: absolute;
+    width: 100%;
+    left: 64%;
+    top: 27%;
+}
+@keyframes car-move {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-2%);
+    }
+ 
+}
+@keyframes wheels-move {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+@keyframes flex-move {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-3%);
+    }
+    
+}
