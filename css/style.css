@@ -72,7 +72,7 @@ a {
   position: relative;
   width: 12rem;
   height: 10rem;
-  margin: 0 auto 0.5rem;
+  margin: 0 auto 0.5rem 1.3rem;
 }
 
 /* --- Крыша --- */
@@ -229,6 +229,10 @@ a {
   left: 0;
   top: 0;
   width: 100%;
+  pointer-events: none;
+}
+.header__burger:has(.burger-menu.active) {
+  pointer-events: all;
 }
 .burger-menu {
   position: absolute;
@@ -398,6 +402,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 20px;
 }
 .footer-content-anteroom-brend {
   max-width: 224px;
@@ -766,10 +771,9 @@ a {
   color: var(--white);
 }
 
-/*  */
-
 .equipment__content {
-  padding: 100px 0;
+  padding-top: 90px;
+  padding-bottom: 30px;
   display: flex;
   flex-direction: row;
   gap: 40px;
@@ -790,7 +794,7 @@ a {
 .equipment__title {
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 40px;
+  font-size: 32px;
   line-height: 90%;
   text-transform: uppercase;
   color: var(--white);
@@ -798,7 +802,7 @@ a {
 .equipment__desc {
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 140%;
   color: var(--white);
 }
@@ -876,7 +880,7 @@ a {
   padding-bottom: 25px;
 }
 .accordion__item.active .accordion__content {
-  max-height: 200px;
+  max-height: 1000px;
   opacity: 1;
 }
 
@@ -886,12 +890,16 @@ a {
   transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
   padding-left: 15px;
 }
-
+.accordion__content-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 .accordion__content-item {
   position: relative;
   font-family: var(--font-family);
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 140%;
   color: var(--white);
 }
@@ -902,12 +910,6 @@ a {
   left: -15px;
 }
 
-/*  */
-
-/* Задания */
-
-/*  */
-
 @media (max-width: 1600px) {
   .advantages__list {
     margin: unset;
@@ -916,6 +918,14 @@ a {
   }
   .burger-menu {
     right: -40%;
+  }
+  .footer-content-rooms {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-content-downroom-content-list {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -1004,6 +1014,7 @@ a {
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 80px;
+    gap: 0;
   }
   .footer-content-rooms-mobile {
     display: flex;
@@ -1059,10 +1070,7 @@ a {
     margin-bottom: 20px;
   }
 
-  .footer-content-upperroom {
-    display: none;
-  }
-  .footer-content-downroom {
+  .footer-content-room {
     display: none;
   }
   .footer-text {
@@ -1466,12 +1474,10 @@ a {
     margin-bottom: 20px;
   }
 
-  .footer-content-upperroom {
+  .footer-content-room {
     display: none;
   }
-  .footer-content-downroom {
-    display: none;
-  }
+
   .footer-text {
     font-family: var(--font-family);
     font-weight: 500;
