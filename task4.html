@@ -1,21 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylesheet" href="./css/task1.css">
-        <link rel="stylesheet" href="./css/normalize.css">
-    
-        <script src="js/script.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/task4.css">
+    <script defer src="js\task4.js"></script>
+</head>
 <body>
     <header class="header">
         <div class="header-wrapper">
@@ -82,56 +75,30 @@
             </div>
         </div>
     </header>
-    <section class="task">
-        <div class="task__wrapper">
-            <div class="container">
-                <div class="ramka">
-                    <div class="night"></div>
-                    <div class="sun"></div>
-                    <div class="arka_group">
-                        <div class="arka"></div>
-                        <div class="arka"></div>
-                        <div class="arka"></div>
-                        <div class="arka"></div>
-                        <div class="arka"></div>
-                        <div class="arka"></div>
-                    </div>
-                    <div class="wave__container">
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                    </div>
-                    <div class="ship">
-                        <div class="ship__board"></div>
-                        <div class="ship__board"></div>
-                        <div class="ship__board"></div>
-                        <div class="ship__board"></div>
-                        <div class="ship__board"></div>
-                        <div class="ship__board"></div>
-                        <div class="ship__board"></div>
-                        
-                        <div class="windows__container">
-                            <div class="windowns"></div>
-                            <div class="windowns"></div>
-                            <div class="windowns"></div>
-                            <div class="windowns"></div>
-                            <div class="windowns"></div>
-                            <div class="windowns"></div>
-                            <div class="windowns"></div>
-                        </div>
-                    </div>
-                    <div class="machta">
-                    </div>
-                    <div class="parus">
-                    </div>
-                    <div class="rodjer">
-                        <div class="rodjer__bones">        <div class="rodjer__bone"></div>
-                        <div class="rodjer__bone"></div></div>
-                    </div>
-                </div>
+    <section class="task4">
+        <div class="container">
+            <div class="task4__content">
+              <div class="task4__select-word"></div>
+              <div class="task4__word-list"></div>
+              <div class="task4__workspace">
+                <form action="" method="get" class="task4__input-word">
+                  <div class="form-task">
+                    <input
+                      type="text"
+                      name="name"
+                      id="words"
+                      required
+                      value="бок"
+                    />
+                    <button id="onClick" type="button" value="Ввод">
+                      Разобрать
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="task4__dragzone"></div>
             </div>
-        </div>
+          </div>
     </section>
     <footer class="footer">
         <div class="footer-our-us">
@@ -170,18 +137,18 @@
 
                     <div class="form-groups">
                         <div class="form-group">
-                            <input type="text" name="name" placeholder="Ваше имя*"> 
+                            <input type="text" name="name" placeholder="Ваше имя*" required> 
                         </div>
                         <div class="form-group">
-                            <input type="tel" name="tel" placeholder="Телефон*"> 
+                            <input type="tel" name="tel" placeholder="Телефон*"  required> 
                         </div>
                         <div class="form-group">
                             <input type="email" name="email" placeholder="E-mail"> 
                         </div>
                     </div>
                     
-                    <button class="form-button" type="button">Отпрвавить</button>
-                    <label class="forn-lebel" for="">Нажимая на кнопку "Отправить", вы принимаете условия политики конфиденциальности</label>
+                    <button class="form-button" type="submit">Отправить</button>
+                    <label class="form-lebel">Нажимая на кнопку "Отправить", вы принимаете условия политики конфиденциальности</label>
                 </form>
                 <div class="footer-content-rooms">
                     <div class="footer-content-rooms-mobile">
@@ -320,6 +287,5 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>
