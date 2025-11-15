@@ -1705,4 +1705,7 @@ a {
     color: var(--white);
     grid-column: span 2;
   }
+  .accordion__header {
+    font-size: 19px;
+  }
 }
